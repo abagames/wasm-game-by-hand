@@ -1,0 +1,28 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;    
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+canvas#main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  
+  width: 80vmin;
+  height: 80vmin;
+}
+
+canvas.pixelated {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+  background: black;
+}

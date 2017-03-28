@@ -1,0 +1,20 @@
+{
+  "name": "wasm-game-by-hand",
+  "version": "1.0.0",
+  "description": "Write a WebAseembly game by hand",
+  "author": "ABA",
+  "license": "MIT",
+  "scripts": {
+    "wds": "webpack-dev-server --inline",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "glob": "^7.1.1",
+    "typescript": "^2.2.2",
+    "wast2wasm": "0.0.0",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {}
+}
