@@ -31,6 +31,6 @@ i   i                                  random
 =====
 ```
 
-### Libraries
+### Reference
 
 [wasm-by-hand] (https://github.com/rhmoller/wasm-by-hand)
