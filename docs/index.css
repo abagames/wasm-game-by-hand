@@ -5,7 +5,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;    
-  background: black;
+  background: #222;
   color: white;
   text-align: center;
 }
