@@ -21,6 +21,7 @@
       )
       (else
         (call $clear_screen)
+        (call $show_score)
       )
     )
   )
@@ -45,11 +46,6 @@
   )
 
   (func $update (export "update")
-    (if (i32.eq (get_global $scene) (i32.const 0))
-      (then
-        (call $show_score)
-      )
-    )
     (if (i32.eq (get_global $scene) (i32.const 1))
       (then
         (call $move_player)
