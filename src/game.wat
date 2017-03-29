@@ -52,7 +52,6 @@
         (set_global $scroll_speed (f32.sub (get_global $scroll_speed) (f32.const 0.007)))
         (set_global $add_rock_speed (f32.sub (get_global $add_rock_speed) (f32.const 0.011)))
         (set_global $player_speed (f32.add (get_global $player_speed) (f32.const 0.0001)))
-        (set_global $score (f32.add (get_global $score) (f32.const 0.03)))
       )
     )
     (if (i32.eq (get_global $scene) (i32.const 2))
@@ -177,6 +176,7 @@
       )
     )
     (call $clear_line (i32.const 0))
+    (set_global $score (f32.add (get_global $score) (f32.const 0.3)))
   )
 
   (func $clear_line (param $y i32)
@@ -211,7 +211,7 @@
   (func $show_score
     (local $i i32)
     (local $o i32)
-    (set_local $i (i32.trunc_u/f32 (get_global $score)))
+    (set_local $i (i32.rem_u (i32.trunc_u/f32 (get_global $score)) (i32.const 256)))
     (set_local $o (i32.const 0))
     (block $clear_break
       (loop $clear
