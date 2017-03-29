@@ -7,7 +7,11 @@ let ram: Uint8Array;
 window.onload = init;
 
 function init() {
-  instantiate(game, {}).then(instance => {
+  instantiate(game, {
+    imports: {
+      random: () => Math.random()
+    }
+  }).then(instance => {
     new WebAssembly.Memory({ initial: 512 / 4 });
     ram = new Uint8Array(instance.exports.ram.buffer);
     document.onkeydown = e => {
