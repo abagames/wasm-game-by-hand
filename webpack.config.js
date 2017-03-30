@@ -11,7 +11,6 @@ module.exports = {
   resolveLoader: {
     modules: ['node_modules', 'web_modules']
   },
-  devtool: 'source-map',
   devServer: {
     contentBase: 'docs'
   },
