@@ -8,7 +8,7 @@ Write a WebAssembly (wast) game by hand.
 WebAssembly                             JavaScript
  game.wat     ┌──────────────┐           index.ts
 ┌───┐         │              │          ┌───────┐
-│   │ ───→ M  │              │  U ────→   Can  │
+│   │ ───→ M  │              │  U ────→ │  Can  │
 │ G │         │     VRAM     │  i       │  vas  │
 │ a │      e  │              │  n       └───────┘
 │ m │         │              │  t
@@ -16,7 +16,7 @@ WebAssembly                             JavaScript
 │   │         ┝──────────────┥  A 
 │ L │      o  │              │  r
 │ o │         │              │  r       ┌───────┐
-│ g │ ←─── r  │    Key Map   │  a ←────  Key   │
+│ g │ ←─── r  │    Key Map   │  a ←──── │ Key   │
 │ i │         │              │  y       │ Event │
 │ c │      y  │              │          └───────┘
 │   │         │              │
