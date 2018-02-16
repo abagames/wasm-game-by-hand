@@ -6,29 +6,29 @@ Write a WebAssembly (wast) game by hand.
 
 ```
 WebAssembly                             JavaScript
- game.wat     ----------------           index.ts
-=====         I              I          =========
-i   i ---> M  I              I  U --->  i  Can  i
-i G i         I     VRAM     I  i       i  vas  i
-i a i      e  I              I  n       =========
-i m i         I              I  t
-i e i      m  I              I  8
-i   i         ----------------  A 
-i L i      o  I              I  r
-i o i         I              I  r       =========
-i g i <--- r  I    Key Map   I  a <---  i Key   i
-i i i         I              I  y       i Event i
-i c i      y  I              I          =========
-i   i         I              I
-i   i         ----------------    
-i   i
-i $update <--                       <-- request
-i   i                                   Animation
-i   i                                   Frame
-i   i
-i $random -->                      --> Math.
-i   i                                  random
-=====
+ game.wat     ┌──────────────┐           index.ts
+┌───┐         │              │          ┌───────┐
+│   │ ───→ M  │              │  U ────→ │  Can  │
+│ G │         │     VRAM     │  i       │  vas  │
+│ a │      e  │              │  n       └───────┘
+│ m │         │              │  t
+│ e │      m  │              │  8
+│   │         ┝──────────────┥  A 
+│ L │      o  │              │  r
+│ o │         │              │  r       ┌───────┐
+│ g │ ←─── r  │    Key Map   │  a ←──── │ Key   │
+│ i │         │              │  y       │ Event │
+│ c │      y  │              │          └───────┘
+│   │         │              │
+│   │         └──────────────┘    
+│   │
+│ $update ←──────────────────────────── request
+│   │                                   Animation
+│   │                                   Frame
+│   │
+│ $random ────────────────────────────→ Math.
+│   │                                  random
+└───┘
 ```
 
 ### Reference
